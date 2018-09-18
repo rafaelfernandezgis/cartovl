@@ -1,6 +1,6 @@
 {
   "name": "carto_vl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@carto/carto-vl": "0.8.0",

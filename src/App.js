@@ -45,7 +45,7 @@ class App extends Component {
       container: this.mapContainer,
       style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
       center: [-3.706467, 40.455674],
-      zoom: 10,
+      zoom: 9,
       dragRotate: false
     });
     const nav = new mbgl.NavigationControl({
@@ -55,7 +55,7 @@ class App extends Component {
     
     carto.setDefaultAuth({
       user: 'udasaas',
-      apiKey: 'PS9dIXm9Kd2n6GW_TztbZQ' //Urban2018
+      apiKey: 'GAriSM2Lxn8xxv5HRl2sWQ' //cartovlgithub
     });
     
     const source = new carto.source.SQL("SELECT geo.name, ind.cartodb_id, ind.category_id, ind.i_a, ind.y_r_qq, ind.y_s_qq, ind.o_a_qq, ind.s_t_qq, ind.n_viv_norm, ind.i_u_qq_rk, ind.id, ind.n_eda, ind.n_viv, ind.o_a, ind.o_pm, ind.o_pu, ind.o_pu_qq, ind.o_u, ind.o_u_qq, ind.o_u_qq_rk, ind.operation, ind.p_e_ter, ind.p_ed_39, ind.p_viv_pp, ind.p_viv_vac, ind.pa_edu_c, ind.pa_edu_g, ind.pa_ocio, ind.pa_p, ind.pa_tp, ind.r_d_rk, ind.r_g, ind.r_s_rk, ind.r_t_rk, ind.renthog_06_13_m, ind.s_fn, ind.s_p, ind.s_pc, ind.s_t, ind.s_u, ind.s_u_qq, ind.s_u_qq_rk, ind.viv_edad_efc, ind.y_r, ind.y_s, geo.the_geom, geo.the_geom_webmercator FROM udasaas.geo_boundary_geometry as geo INNER JOIN udasaas.rgi ind on geo.id = ind.id WHERE ( (ind.type=13 and ind.l_10='España') or (ind.type=13 and ind.l_10='Italia') or (ind.type=13 and ind.l_10='Peru') ) and ind.category_id is null and ind.operation = 1");
@@ -109,8 +109,8 @@ class App extends Component {
           if (feature.id === node.data.cartodb_id) {
             alert(node.data.name);
               
-            //node.setSelected(true, false);
-            //self.state.gridOptions.api.ensureIndexVisible(index);
+            node.setSelected(true, false);
+            self.state.gridOptions.api.ensureIndexVisible(index);
             //self.state.gridOptions.api.ensureNodeVisible(node, 'top');
           }
       })
