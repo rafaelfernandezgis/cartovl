@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.ag-theme-material {
+    font-family: 'gothamLight';
+    height: 100% !important;
+}
+
+.ag-theme-material .ag-header-cell, .ag-theme-material .ag-header-group-cell {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 56px;
+}
+.ag-theme-material .ag-header-row {
+    height: 50px !important;
+}
+
+.ag-theme-material .ag-header-cell-label {
+    width: 100%;
+}
+
+.ag-theme-material .ag-header-cell-label .ag-header-icon {
+    margin-left: 2px;
+}
+
+.ag-theme-material .ag-icon-desc {
+    width: 10px;
+}
+.ag-theme-material .ag-icon-asc {
+    width: 10px;
+}
+
+.ag-theme-material .ag-header-cell-label .ag-header-cell-text {
+    margin: 0 auto;
+    font-family: "gothamLight";
+}
+
+.ag-theme-material .ag-overlay-no-rows-center {
+    background-color: #ffffff;
+    border: 2px solid darkgrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ag-theme-material .ag-bl-overlay {
+    padding-top: 40px;
+    font-family: 'gothamLight';
+    font-size: 14px;
+}
+
+.ag-theme-material .ag-cell:focus {
+    outline: none;
+    border: none;
+}
+
+.ag-theme-material .ag-row-selected {
+    background: rgb(190, 7, 7) !important;
+}
+.ag-theme-material .ag-row-hover {
+    background: #eee !important;
+}
